@@ -4,7 +4,7 @@ import os
 import sys
 
 
-@borg.on(events.NewMessage(pattern=r"\.lovel", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.rlovel", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
