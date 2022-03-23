@@ -4,7 +4,7 @@ import os
 import sys
 
 
-@borg.on(events.NewMessage(pattern=r"\.rrlovel", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.lovell", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -40,7 +40,3 @@ async def _(event):
     await event.edit("⚪⚪⚪❤❤❤❤⚪⚪⚪❤❤❤❤⚪⚪⚪⚪ \n⚪⚪❤❤❤❤❤❤⚪❤❤❤❤❤❤⚪⚪ \n⚪❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤⚪ \n⚪❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤⚪ \n⚪❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤⚪ \n⚪❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤⚪ \n⚪⚪❤❤❤❤❤❤❤❤❤❤❤❤❤⚪⚪ \n⚪⚪⚪❤❤❤❤❤❤❤❤❤❤❤⚪⚪⚪ \n⚪⚪⚪⚪⚪❤❤❤❤❤❤❤⚪⚪⚪⚪⚪ \n⚪⚪⚪⚪⚪⚪❤❤❤❤❤⚪⚪⚪⚪⚪⚪ \n⚪⚪⚪⚪⚪⚪⚪❤❤❤⚪⚪⚪⚪⚪⚪⚪ \n⚪⚪⚪⚪⚪⚪⚪⚪❤⚪⚪⚪⚪⚪⚪⚪⚪️ \n⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪ ️ \n")
     await asyncio.sleep(0.5)
     await event.edit("⚪⚪⚪❤❤❤❤⚪⚪⚪❤❤❤❤⚪⚪⚪⚪ \n⚪⚪❤❤❤❤❤❤⚪❤❤❤❤❤❤⚪⚪ \n⚪❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤⚪ \n⚪❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤⚪ \n⚪❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤⚪ \n⚪❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤⚪ \n⚪⚪❤❤❤❤❤❤❤❤❤❤❤❤❤⚪⚪ \n⚪⚪⚪❤❤❤❤❤❤❤❤❤❤❤⚪⚪⚪ \n⚪⚪⚪⚪⚪❤❤❤❤❤❤❤⚪⚪⚪⚪⚪ \n⚪⚪⚪⚪⚪⚪❤❤❤❤❤⚪⚪⚪⚪⚪⚪ \n⚪⚪⚪⚪⚪⚪⚪❤❤❤⚪⚪⚪⚪⚪⚪⚪ \n⚪⚪⚪⚪⚪⚪⚪⚪❤⚪⚪⚪⚪⚪⚪⚪⚪️ \n⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪ ️ \n")
-    await asyncio.sleep(0.5)
-    await event.edit("I LOVE YOU!")
-    await asyncio.sleep(2)
-    await event.delete()
